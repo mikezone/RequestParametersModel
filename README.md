@@ -60,6 +60,8 @@ NSLog(@"%@", search3.queryString);
 
 # Components
 `NSDictionary+ConvertToQueryString`: convert a parameters(NSDictionary type) to a queryString,
+
 `NSString+ConvertToDictionary`: convert a queryString(NSString type) to a dictionary,
+
 `URLCode`: a tool be use for `URLEncode` and `URLDecode`.
 
