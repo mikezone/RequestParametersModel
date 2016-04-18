@@ -106,7 +106,7 @@ static char typeEncodingForProperty(Class inClass, NSString *pName) {
     if (strlen(attriValue) > 0) {
         return attriValue[0];
     }
-    return ' ';
+    return MKObjCTypeNo;
 }
 
 @interface RequestParametersModel ()

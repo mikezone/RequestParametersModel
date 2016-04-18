@@ -52,8 +52,7 @@ NSLog(@"%@", search2.queryString);
 
 Use parameters dictionary initialize a model
 ```objectivec
-Search *search3 = [[Search alloc] initWithParameters:@{@"tn": @"baiduhome_pg",
-        @"wd":@"aa"}];
+Search *search3 = [[Search alloc] initWithParameters:@{@"tn": @"baiduhome_pg", @"wd":@"aa"}];
 NSLog(@"%@", search3.parameters);
 NSLog(@"%@", search3.queryString);
 ```
