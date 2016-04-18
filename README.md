@@ -33,10 +33,33 @@ search.index = 10;
 3.Request HTTP interface
 ```objectivec
 AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [manager GET:@"https://www.baidu.com" parameters:search.parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        NSLog(@"%@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        NSLog(@"%@", [error localizedDescription]);
-    }];
+manager.responseSerializer = [AFHTTPResponseSerializer serializer];
+[manager GET:@"https://www.baidu.com" parameters:search.parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    NSLog(@"%@", [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
+} failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+    NSLog(@"%@", [error localizedDescription]);
+}];
 ```
+
+# Additional functions
+
+Use queryString initialize a model
+```objectivec
+Search *search2 = [[Search alloc] initWithQueryString:@"tn=baiduhome_pg&wd=aa"];
+NSLog(@"%@", search2.parameters);
+NSLog(@"%@", search2.queryString);
+```
+
+Use parameters dictionary initialize a model
+```objectivec
+Search *search3 = [[Search alloc] initWithParameters:@{@"tn": @"baiduhome_pg",
+        @"wd":@"aa"}];
+NSLog(@"%@", search3.parameters);
+NSLog(@"%@", search3.queryString);
+```
+
+# Components
+`NSDictionary+ConvertToQueryString`: convert a parameters(NSDictionary type) to a queryString,
+`NSString+ConvertToDictionary`: convert a queryString(NSString type) to a dictionary,
+`URLCode`: a tool be use for `URLEncode` and `URLDecode`.
+
