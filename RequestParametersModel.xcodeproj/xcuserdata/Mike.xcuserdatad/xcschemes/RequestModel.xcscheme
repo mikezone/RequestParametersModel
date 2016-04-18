@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "27841D691CC0976900FE6808"
-               BuildableName = "RequestModel.app"
-               BlueprintName = "RequestModel"
-               ReferencedContainer = "container:RequestModel.xcodeproj">
+               BuildableName = "RequestParametersModel.app"
+               BlueprintName = "RequestParametersModel"
+               ReferencedContainer = "container:RequestParametersModel.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "27841D821CC0976900FE6808"
                BuildableName = "RequestModelTests.xctest"
                BlueprintName = "RequestModelTests"
-               ReferencedContainer = "container:RequestModel.xcodeproj">
+               ReferencedContainer = "container:RequestParametersModel.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,7 +45,7 @@
                BlueprintIdentifier = "27841D8D1CC0976900FE6808"
                BuildableName = "RequestModelUITests.xctest"
                BlueprintName = "RequestModelUITests"
-               ReferencedContainer = "container:RequestModel.xcodeproj">
+               ReferencedContainer = "container:RequestParametersModel.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27841D691CC0976900FE6808"
-            BuildableName = "RequestModel.app"
-            BlueprintName = "RequestModel"
-            ReferencedContainer = "container:RequestModel.xcodeproj">
+            BuildableName = "RequestParametersModel.app"
+            BlueprintName = "RequestParametersModel"
+            ReferencedContainer = "container:RequestParametersModel.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27841D691CC0976900FE6808"
-            BuildableName = "RequestModel.app"
-            BlueprintName = "RequestModel"
-            ReferencedContainer = "container:RequestModel.xcodeproj">
+            BuildableName = "RequestParametersModel.app"
+            BlueprintName = "RequestParametersModel"
+            ReferencedContainer = "container:RequestParametersModel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "27841D691CC0976900FE6808"
-            BuildableName = "RequestModel.app"
-            BlueprintName = "RequestModel"
-            ReferencedContainer = "container:RequestModel.xcodeproj">
+            BuildableName = "RequestParametersModel.app"
+            BlueprintName = "RequestParametersModel"
+            ReferencedContainer = "container:RequestParametersModel.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
