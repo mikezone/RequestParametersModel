@@ -2,6 +2,7 @@
 Expediently build parameters using when send HTTP request.
 
 # Usage
+
 1.Create a Model extends `RequestParametersModel`, use `dynamic` mark its property;
 ```objectivec
 @interface Search : RequestParametersModel
@@ -20,14 +21,16 @@ Expediently build parameters using when send HTTP request.
 
 @end
 ```
-2. Build parameter using kvc-Style
+
+2.Build parameter using kvc-Style
 ```objectivec
 Search *search = [[Search alloc] init];
 search.wd = @"aa";
 search.tn = @"baiduhome_pg";
 search.index = 10;
 ```
-3. Request HTTP interface
+
+3.Request HTTP interface
 ```objectivec
 AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
