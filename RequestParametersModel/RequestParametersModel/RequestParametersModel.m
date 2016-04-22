@@ -142,7 +142,7 @@ static char typeEncodingForProperty(Class inClass, NSString *pName) {
 }
 
 - (void)setInitialDataWithParameter:(NSDictionary *)parameter {
-    NSArray *sortedKeys = [parameter keysSortedByValueUsingComparator:^NSComparisonResult(NSString * _Nonnull obj1, NSString * _Nonnull obj2) {
+    NSArray *sortedKeys = [parameter.allKeys sortedArrayUsingComparator:^NSComparisonResult(NSString * _Nonnull obj1, NSString * _Nonnull obj2) {
         return [obj1 compare:obj2];
     }];
     _allKeys = sortedKeys.mutableCopy;
