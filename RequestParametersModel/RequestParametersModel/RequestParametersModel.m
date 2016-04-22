@@ -52,9 +52,9 @@ typedef NS_ENUM(NSUInteger, MKObjCType) {
     MKObjCTypeClass = '#',
     MKObjCTypeSelector = ':',
     
-    MKObjCTypeArray = '[',
-    MKObjCTypeStruct = '{',
-    MKObjCTypeUnion = '(',
+    MKObjCTypeCArray = '[',
+    MKObjCTypeCStruct = '{',
+    MKObjCTypeCUnion = '(',
     
     MKObjCTypeBitfield = 'b',
     MKObjCTypeUnknown = '?'
@@ -168,7 +168,7 @@ static char typeEncodingForProperty(Class inClass, NSString *pName) {
     return parameters.copy;
 }
 
-#pragma mark - dynamic 处理
+#pragma mark - dynamic Handler
 
 - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector {    
     NSString *selName = NSStringFromSelector(aSelector);

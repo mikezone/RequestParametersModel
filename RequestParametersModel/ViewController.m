@@ -23,8 +23,11 @@
     
     Search *search = [[Search alloc] init];
 //    search.wd(@"x").tn(@"y"); // 暂未实现这种调用方法
+    CFAbsoluteTime begin = CFAbsoluteTimeGetCurrent();
     search.wd = @"aa";
     search.tn = @"baiduhome_pg";
+    CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
+    NSLog(@"%f", end - begin);
     NSLog(@"%@", search.parameters);
     NSLog(@"%@", search.queryString);
     
@@ -45,10 +48,15 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     Search *search = [[Search alloc] init];
+    CFAbsoluteTime begin = CFAbsoluteTimeGetCurrent();
     search.wd = @"aa";
     search.tn = @"baiduhome_pg";
     search.index = 10;
-    
+    CFAbsoluteTime end = CFAbsoluteTimeGetCurrent();
+//Hahahah:smile:, it's emoticons::cool::arrow::cry::wink:
+//    
+//    You can input ":" + "smile" + ":" to display smile emoticon, or you can copy and paste these emoticons.
+    NSLog(@"%f", end - begin);
     // request
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
