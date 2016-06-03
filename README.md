@@ -1,5 +1,5 @@
 # RequestParametersModel
-Expediently build parameters using when send HTTP request.
+Expediently build parameters when send HTTP request.
 
 # Usage
 
@@ -46,15 +46,16 @@ manager.responseSerializer = [AFHTTPResponseSerializer serializer];
 Use queryString initialize a model
 ```objectivec
 Search *search2 = [[Search alloc] initWithQueryString:@"tn=baiduhome_pg&wd=aa"];
-NSLog(@"%@", search2.parameters);
-NSLog(@"%@", search2.queryString);
+NSLog(@"%@", search2.parameters); // { tn = "baiduhome_pg"; wd = aa; }
+NSLog(@"%@", search2.queryString); // tn=baiduhome_pg&wd=aa
 ```
 
 Use parameters dictionary initialize a model
 ```objectivec
 Search *search3 = [[Search alloc] initWithParameters:@{@"tn": @"baiduhome_pg", @"wd":@"aa"}];
-NSLog(@"%@", search3.parameters);
-NSLog(@"%@", search3.queryString);
+NSLog(@"%@", search3.parameters); // { tn = "baiduhome_pg"; wd = aa; }
+search3.index = 5;
+NSLog(@"%@", search3.queryString); // index=5&tn=baiduhome_pg&wd=aa
 ```
 
 # Components
